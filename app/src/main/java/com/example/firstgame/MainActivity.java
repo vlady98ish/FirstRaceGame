@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         stopTimer();
-        music.stop();
+        music.pause();
     }
 
 
@@ -112,8 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void gameOver() {
         toast(GAME_OVER);
-        stopTimer();
-        music.stop();
+        finish();
 
     }
 
